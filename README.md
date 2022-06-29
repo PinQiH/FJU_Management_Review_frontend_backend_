@@ -1,0 +1,198 @@
+<h1>輔仁管理評論</h1>
+
+<ui>
+  <li>程式語言: html, php</li>
+  <li>伺服器: Apache</li>
+  <li>資料庫: MyAQL</li>
+</ui>
+
+<h3>頁面畫面</h3>
+
+<h5>首頁(index.php)</h5>
+![image](https://user-images.githubusercontent.com/83577156/176391473-ac486485-87fe-43d1-a0ce-26105ac2cd0e.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176391523-c47967fe-21e1-4742-b398-af2485a5dde0.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176391553-a88c7df7-5bdd-4cc9-badc-ce70ca81f2d4.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176391582-eb4343d9-ced5-49f5-9ad5-20e2f5e6bd54.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176391626-d4d8d674-4eb8-4b08-8c02-9998f69d2c7c.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176391673-9cbfbecf-967a-4136-8303-7b59d488dea5.png)<br>
+
+<h5>登入(loginindex.php)</h5>
+![image](https://user-images.githubusercontent.com/83577156/176391837-2aa3555a-e4d2-44a7-a819-e6a1b5baad7f.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176391899-0629aea0-d640-47df-b4e1-dbddae7de160.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176391933-87fc4d2a-f76d-4e9d-8362-a4c765722a52.png)<br>
+
+<h5>投稿者頁面(contributor.php)</h5>
+![image](https://user-images.githubusercontent.com/83577156/176392153-84399dab-8742-405a-a963-ae076981a6ba.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176392227-bbfb4db5-0835-4867-a207-8f1b7e7d5d46.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176392299-e463ddd8-811b-4426-a0bb-ff574f29f306.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176392352-58a0dd6c-4c67-4671-9f1d-0bccea33eabb.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176392398-75826792-683c-4b4f-95d6-b72987e4736c.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176392448-63a44f92-c7b3-4485-8657-bb1cea224ed9.png)<br>
+
+<h5>審稿者頁面(reviewer.php)</h5>
+![image](https://user-images.githubusercontent.com/83577156/176392641-b6739e06-caed-47d7-80da-a6d2b9bcc939.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176392673-bc12a360-a30a-4051-9675-9d090d5ab57c.png)<br>
+
+<h5>管理者頁面(manager.php)</h5>
+![image](https://user-images.githubusercontent.com/83577156/176392831-82a52ca8-1463-4248-a0d8-e50ce07198dc.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176392871-792a560b-5ab8-4413-9027-ffeed4258d9b.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176392897-dfd8e17a-a4d7-40a3-9d2f-a6dac894e2e4.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176392941-5b954876-6c3e-4626-aa3f-6fd95e5bd218.png)<br>
+![image](https://user-images.githubusercontent.com/83577156/176392986-84be0a33-4f89-4d1b-8eeb-a2c2cc6d2338.png)<br>
+
+<h3>資料庫欄位</h3>
+
+<h5>article</h5>
+<table>
+  <tr>
+    <td>欄位</td>
+    <td>類型</td>
+    <td>空值</td>
+    <td>預設值</td>
+  </tr>
+  <tr>
+    <td>articleid (主鍵)</td>
+    <td>int(11)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>articlename</td>
+    <td>varchar(50)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>articletype</td>
+    <td>varchar(100)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>articlecontent</td>
+    <td>varchar(500)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>articlepath</td>
+    <td>varchar(500)</td>
+    <td>是</td>
+    <td>NULL</td>
+  </tr>
+  <tr>
+    <td>contributor</td>
+    <td>varchar(10)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>reviewer1</td>
+    <td>varchar(10)</td>
+    <td>是</td>
+    <td>NULL</td>
+  </tr>
+  <tr>
+    <td>reviewer2</td>
+    <td>varchar(10)</td>
+    <td>是</td>
+    <td>NULL</td>
+  </tr>
+  <tr>
+    <td>managerreply</td>
+    <td>varchar(10)</td>
+    <td>是</td>
+    <td>NULL</td>
+  </tr>
+</table>
+
+<h5>article2</h5>
+<table>
+  <tr>
+    <td>欄位</td>
+    <td>類型</td>
+    <td>空值</td>
+    <td>預設值</td>
+  </tr>
+  <tr>
+    <td>replyid (主鍵)</td>
+    <td>int(11)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>reviewer</td>
+    <td>varchar(15)</td>
+    <td>是</td>
+    <td>NULL</td>
+  </tr>
+  <tr>
+    <td>replydecision</td>
+    <td>varchar(20)</td>
+    <td>是</td>
+    <td>NULL</td>
+  </tr>
+  <tr>
+    <td>replycontent</td>
+    <td>varchar(1000)</td>
+    <td>是</td>
+    <td>NULL</td>
+  </tr>
+  <tr>
+    <td>replypath</td>
+    <td>varchar(100)</td>
+    <td>是</td>
+    <td>NULL</td>
+  </tr>
+  <tr>
+    <td>managerreply</td>
+    <td>varchar(10)</td>
+    <td>是</td>
+    <td>NULL</td>
+  </tr>
+</table>
+
+<h5>user</h5>
+<table>
+  <tr>
+    <td>欄位</td>
+    <td>類型</td>
+    <td>空值</td>
+    <td>預設值</td>
+  </tr>
+  <tr>
+    <td>userid (主鍵)</td>
+    <td>int(11)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>auth</td>
+    <td>varchar(3)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>profession</td>
+    <td>varchar(100)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>varchar(65)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>phone</td>
+    <td>varchar(20)</td>
+    <td>否</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>password</td>
+    <td>varchar(30)</td>
+    <td>否</td>
+  </tr>
+</table>
