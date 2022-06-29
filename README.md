@@ -194,5 +194,6 @@
     <td>password</td>
     <td>varchar(30)</td>
     <td>否</td>
+    <td></td>
   </tr>
 </table>
